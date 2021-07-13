@@ -1,7 +1,6 @@
-package com.son;
+package com.son.display;
 
-import com.son.program.Add;
-import javafx.scene.transform.Scale;
+import com.son.program.matcher.add.Add;
 
 import java.util.Scanner;
 

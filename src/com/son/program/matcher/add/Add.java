@@ -1,8 +1,12 @@
-package com.son.program;
+package com.son.program.matcher.add;
 
-import com.son.DanhBa;
+import com.son.display.DanhBa;
 
-import com.son.program.matcher.*;
+import com.son.display.GmailMatcher;
+import com.son.display.Manager;
+import com.son.display.PhoneNumberMatcher;
+import com.son.program.matcher.file.FileCSV;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -56,8 +60,16 @@ public class Add{
         String phonenumber = scanner.nextLine();
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).getPhonenumber().equals(phonenumber)){
-                list.remove(i);
-                break;
+                System.out.println("Y/N");
+                String x = scanner.nextLine();
+                if (x.equals("y") || x.equals("Y")){
+                    list.remove(i);
+                    break;
+                } else {
+                    Manager manager = new Manager();
+                    manager.Menu();
+                    break;
+                }
             }
         }
     }

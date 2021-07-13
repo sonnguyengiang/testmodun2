@@ -1,4 +1,4 @@
-package com.son;
+package com.son.display;
 
 public class DanhBa {
     private String name;
