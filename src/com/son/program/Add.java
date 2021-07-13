@@ -99,7 +99,7 @@ public class Add{
 
                 }
             } else {
-                System.err.println("Số điện thoại đang bị thừa hoặc thiếu!");
+                System.out.println("Số điện thoại đang bị thừa hoặc thiếu!");
             }
         }
     }
@@ -130,12 +130,12 @@ public class Add{
                     if (check > 0) {
                         return gmail;
                     } else {
-                        System.err.println("gmail bị trùng");
+                        System.out.println("gmail bị trùng");
                         System.out.println();
                     }
                 }
             } else {
-                System.err.println("Nhập lại");
+                System.out.println("Nhập lại");
             }
         }
     }
